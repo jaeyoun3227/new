@@ -91,7 +91,7 @@ void create(){
 }
 
 void read_all(){
-	printf("All records.\n");
+	printf("Here is all restaurants' information>>\n");
 	int size = info_count();
 	T_Record* records[MAX_MEMBERS];
 	info_gets_all(records);
