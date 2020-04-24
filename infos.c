@@ -78,10 +78,13 @@ void info_delete(T_Record* p){
 	free(p);
 	infos[index] = NULL;
 	_count--;
+
+	for(i=index+1; i<MAX_MEMBERS; i++)
+		infos[i-1] = infos[i];
 }
 
 char* info_to_string(T_Record* p){
-	static char str[80];
+	static char str[100];
 	sprintf(str, "[%s] %s / %s / call: %s", p->name, p->ctgr, p->time, p->phone);
 	#ifdef DEBUG
 		printf("struct info is changed like %s\n", str);
@@ -99,29 +102,6 @@ void info_gets_all(T_Record* a[]){
 	#ifdef DEBUG
 		printf("we got %c infos!\n", c);
 	#endif
-}
-
-void info_gets_all2(T_Record* a[]){
-	int i;
-	for(i=0; i<MAX_MEMBERS; i++){
-		a[i]=infos[i];
-	}
-}
-
-char* info_getname(T_Record* p){
-	return p->name;
-}
-
-char* info_getphone(T_Record* p){
-	return p->phone;
-}
-
-char* info_getctgr(T_Record* p){
-	return p->ctgr;
-}
-
-char* info_gettime(T_Record* p){
-	return p->time;
 }
 
 int info_get_all_by_name(T_Record* a[], char* n){
@@ -172,7 +152,7 @@ void info_init(){
 }
 
 char* info_to_string_save(T_Record* p){
-	static char str[80];
+	static char str[100];
 	sprintf(str, "%s %s %s %s", p->name, p->phone, p->ctgr, p->time);
 	#ifdef DEBUG
 		printf("%s is saved clear\n", p->name);

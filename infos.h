@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_MEMBERS 5
+#define MAX_MEMBERS 80
 
 typedef struct info{
-	char name[20];
+	char name[50];
 	char phone[20];
 	char ctgr[20];
 	char time [20];
@@ -20,12 +20,7 @@ T_Record* info_search_by_name(char* n); //음식점 이름이 일치하는 포�
 void info_update(T_Record* p, char* ph, char* c, char* t); // 특정 음식점 정보 업데이트
 void info_delete(T_Record* p); // 특정 음식점 정보 삭제
 void info_gets_all(T_Record* a[]); //정보가 들어있는 모든 record pointer 배열찾기
-void info_gets_all2(T_Record* a[]); // 모든 레코드 포인터의 배열을 만들기 (for debug)
 char* info_to_string(T_Record* p); // 특정 음식점의 정보 문자열로 가져오기
-char* info_getname(T_Record* p);
-char* info_getphone(T_Record* p);
-char* info_getctgr(T_Record* p);
-char* info_gettime(T_Record* p);
 int info_get_all_by_name(T_Record* a[], char* n);
 int info_get_all_by_ctgr(T_Record* a[], char* n);
 int info_get_all_by_time(T_Record* a[], char* n);
