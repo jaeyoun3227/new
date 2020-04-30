@@ -1,0 +1,20 @@
+MENU : 1.Create 2.Read 3.Update 4.Delete 5.Search(name) 6.Search(time) 7.Search(ctgr) 8.Delete(condition) 9.Delete(all) 10.Load 11.Save 0.Quit > 10
+
+All data will be deleted and new records will be reloaded.
+1.Yes 0.No > 1
+50 records are read from file!
+
+MENU : 1.Create 2.Read 3.Update 4.Delete 5.Search(name) 6.Search(time) 7.Search(ctgr) 8.Delete(condition) 9.Delete(all) 10.Load 11.Save 0.Quit > 1
+
+Enter a new info.
+NAME > 바나나
+PHONE > 010-111-1111
+Category > 과일
+TIME(빠름/보통/느림) > 빠름
+The information is created:)
+
+MENU : 1.Create 2.Read 3.Update 4.Delete 5.Search(name) 6.Search(time) 7.Search(ctgr) 8.Delete(condition) 9.Delete(all) 10.Load 11.Save 0.Quit > 11
+
+All records.
+51 records are saved!
+
