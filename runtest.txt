@@ -1,0 +1,23 @@
+MENU : 1.Create 2.Read 3.Update 4.Delete 5.Search(name) 6.Search(time) 7.Search(ctgr) 8.Delete(condition) 9.Delete(all) 10.Load 11.Save 0.Quit > 1
+
+Enter a new info.
+NAME > 바나나
+PHONE > 010-111-1111
+Category > 과일
+TIME(빠름/보통/느림) > 빠름
+The information is created:)
+
+MENU : 1.Create 2.Read 3.Update 4.Delete 5.Search(name) 6.Search(time) 7.Search(ctgr) 8.Delete(condition) 9.Delete(all) 10.Load 11.Save 0.Quit > 2
+
+Here is all restaurants' information>>
+1. [바나나] 과일 / 빠름 / call: 010-111-1111
+
+MENU : 1.Create 2.Read 3.Update 4.Delete 5.Search(name) 6.Search(time) 7.Search(ctgr) 8.Delete(condition) 9.Delete(all) 10.Load 11.Save 0.Quit > 3
+
+Enter a name > 바나나
+Enter a updated info.
+Phone > 010-222-2222
+Category > 곡식
+Time(빠름/보통/느림) > 느림
+The information is updated:)
+
